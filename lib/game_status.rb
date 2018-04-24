@@ -15,24 +15,7 @@ WIN_COMBINATIONS = [
   ]
 #["X", "O", "X", "O", "X", "O", "O", "O", "X"]
 def won? (board)
-   WIN_COMBINATIONS.each.with_index do |win, i|
-     o_arr = []
-     x_arr = []
-    board.each.with_index do |play, idx|
-      if(play == "O")
-        o_arr << idx
-        if(o_arr == win)
-          return win
-        end
-      elsif (play == "X")
-        x_arr << idx
-        if(x_arr == win)
-          return win
-        end
-      end
-    end
-  end
-  return false #if none of the above conditions are met, then it's either a draw or empty
+ 
 end
 
 def full? (board)
