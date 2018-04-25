@@ -13,7 +13,7 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
   ]
-#["X", "O", "X", "O", "X", "O", "O", "O", "X"]
+
 def won? (board)
   result = []
   WIN_COMBINATIONS.each do |win|
