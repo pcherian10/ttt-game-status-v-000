@@ -17,10 +17,10 @@ WIN_COMBINATIONS = [
 def won? (board)
   WIN_COMBINATIONS.each do |win|
     win.each do |el|
-      if(board[el]) != "X"
-          
-      elsif(board[el] == "O")
-          return win
+      if(board[el] == "X")
+          return win  
+      if(board[el] == "O")
+        win.each do |el|
       
       
       
