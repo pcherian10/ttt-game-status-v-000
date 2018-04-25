@@ -16,9 +16,16 @@ WIN_COMBINATIONS = [
 #["X", "O", "X", "O", "X", "O", "O", "O", "X"]
 def won? (board)
   WIN_COMBINATIONS.each do |win|
-    
-      if(board == )
-    
+    win.each do |el|
+      if(board[el]) != "X"
+          
+      elsif(board[el] == "O")
+          return win
+      
+      
+      
+      
+      
   
   end
 end
