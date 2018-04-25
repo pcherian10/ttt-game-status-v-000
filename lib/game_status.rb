@@ -20,7 +20,7 @@ def won? (board)
     win.each do |el|
       result << board[el]
     end
-    if (result.all? {|el| "X"} || result.all? {|el| "O"})
+    if (result.all? {|el| el == "X"} || result.all? {|el| el == "O"})
       return win
     else
       return false
