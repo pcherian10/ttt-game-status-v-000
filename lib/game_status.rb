@@ -15,7 +15,12 @@ WIN_COMBINATIONS = [
   ]
 #["X", "O", "X", "O", "X", "O", "O", "O", "X"]
 def won? (board)
+  WIN_COMBINATIONS.each do
+    
+      
+    
   
+  end
 end
 
 def full? (board)
