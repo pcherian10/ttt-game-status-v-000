@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   ]
 #["X", "O", "X", "O", "X", "O", "O", "O", "X"]
 def won? (board)
- 
+  
 end
 
 def full? (board)
