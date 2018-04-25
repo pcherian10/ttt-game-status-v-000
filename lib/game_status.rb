@@ -15,13 +15,13 @@ WIN_COMBINATIONS = [
   ]
 #["X", "O", "X", "O", "X", "O", "O", "O", "X"]
 def won? (board)
+  result = []
   WIN_COMBINATIONS.each do |win|
     win.each do |el|
-      unless board[el] != "X"
+      result << board[el]
+    end
+    return win if result.all? {|el| "X"}
       
-          return win  
-      if(board[el] == "O")
-        win.each do |el|
       
       
       
