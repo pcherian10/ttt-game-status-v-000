@@ -18,7 +18,7 @@ def won? (board)
   result = []
   WIN_COMBINATIONS.each do |win|
     win.each {|el| result << board[el]}
-    if (result.all? {|position| position == "X"} || result.all? {|position| position == "O"})
+    if (result.all? {|x_pos| x_pos == "X"} || result.all? {|o_pos| o_pos == "O"})
       return win
     else
       return false
